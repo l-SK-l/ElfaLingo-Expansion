@@ -1,0 +1,201 @@
+{
+  "extName": {
+    "message": "ElfaLingo: добавить в колоду",
+    "description": "Название расширения в Chrome Web Store и в Chrome. До 75 символов."
+  },
+  "extDescription": {
+    "message": "Добавляйте выделенное на любой странице слово в колоду ElfaLingo через контекстное меню. Работает с вашим сервером ElfaLingo.",
+    "description": "Описание расширения. До 132 символов."
+  },
+  "menuAdd": {
+    "message": "Добавить «%s» в ElfaLingo",
+    "description": "Пункт контекстного меню над выделенным текстом. Chrome подставляет выделение вместо %s."
+  },
+
+  "titleIdle": {
+    "message": "Выделите слово на странице и нажмите правую кнопку мыши"
+  },
+  "titlePending": {
+    "message": "Ждут отправки: $COUNT$",
+    "placeholders": { "count": { "content": "$1", "example": "3" } }
+  },
+  "problem_signed_out": {
+    "message": "Вход не выполнен — нажмите на значок, чтобы войти"
+  },
+  "problem_account_disabled": {
+    "message": "Учётная запись отключена — обратитесь к администратору сервера ElfaLingo"
+  },
+  "problem_unreachable": {
+    "message": "Нет связи с сервером ElfaLingo"
+  },
+  "problem_foreign": {
+    "message": "Адрес сервера ведёт не в ElfaLingo — проверьте его в настройках"
+  },
+  "problem_server_error": {
+    "message": "Сервер ответил ошибкой — слова отправятся позже"
+  },
+  "resultAdded": {
+    "message": "Отправлено в колоду: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "«Hund»" } }
+  },
+  "resultDuplicate": {
+    "message": "Уже в колоде: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "«Hund»" } }
+  },
+  "resultRejected": {
+    "message": "Не добавлено: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "«Hund»" } }
+  },
+  "resultNothing": {
+    "message": "Нечего добавить: в выделении нет слова"
+  },
+  "quoted": {
+    "message": "«$WORD$»",
+    "placeholders": { "word": { "content": "$1", "example": "Hund" } }
+  },
+  "andMore": {
+    "message": "и ещё $COUNT$",
+    "placeholders": { "count": { "content": "$1", "example": "3" } }
+  },
+
+  "pageTitle": {
+    "message": "ElfaLingo: добавить в колоду — настройки"
+  },
+  "tagline": {
+    "message": "Слова в колоду с любого сайта"
+  },
+  "versionLabel": {
+    "message": "Версия $VERSION$",
+    "placeholders": { "version": { "content": "$1", "example": "1.0.0" } }
+  },
+  "statusOk": {
+    "message": "Связь есть — выделенные слова уходят прямо в колоду"
+  },
+  "statusChecking": {
+    "message": "Проверяем связь…"
+  },
+  "lastTitle": {
+    "message": "В последний раз"
+  },
+  "signInTitle": {
+    "message": "Вход"
+  },
+  "labelServer": {
+    "message": "Адрес сервера"
+  },
+  "hintServer": {
+    "message": "Адрес, по которому вы открываете ElfaLingo, например https://elfalingo.example.com"
+  },
+  "labelEmail": {
+    "message": "Email"
+  },
+  "labelPassword": {
+    "message": "Пароль"
+  },
+  "labelRemember": {
+    "message": "Запомнить вход"
+  },
+  "hintRemember": {
+    "message": "Пароль не сохраняется. С галочкой токен сессии хранится, пока вы не выйдете; без неё — до закрытия браузера."
+  },
+  "warningInsecure": {
+    "message": "Адрес на http: пароль и слова передаются без шифрования. Для сервера не на этом компьютере используйте https."
+  },
+  "buttonSignIn": {
+    "message": "Войти"
+  },
+  "buttonSigningIn": {
+    "message": "Входим…"
+  },
+  "accountTitle": {
+    "message": "Аккаунт"
+  },
+  "accountServer": {
+    "message": "Сервер"
+  },
+  "accountEmail": {
+    "message": "Email"
+  },
+  "accountSession": {
+    "message": "Сессия"
+  },
+  "sessionRemembered": {
+    "message": "Запомнена до выхода"
+  },
+  "sessionBrowser": {
+    "message": "До закрытия браузера"
+  },
+  "buttonCheck": {
+    "message": "Проверить связь"
+  },
+  "buttonSignOut": {
+    "message": "Выйти"
+  },
+  "signOutNote": {
+    "message": "Чтобы сменить сервер или аккаунт, выйдите и войдите заново. Ещё не отправленные слова при выходе удаляются."
+  },
+  "howToTitle": {
+    "message": "Как пользоваться"
+  },
+  "howToSelect": {
+    "message": "Выделите слово на любой странице, нажмите правую кнопку мыши и выберите «Добавить в ElfaLingo»."
+  },
+  "howToList": {
+    "message": "Несколько слов через запятую добавляются по одному. Слово встаёт в очередь, и ElfaLingo заполняет карточку — так же, как слово, набранное в приложении."
+  },
+  "legendTitle": {
+    "message": "Значок"
+  },
+  "legendAdded": {
+    "message": "слово отправлено в колоду («+3» — три слова)"
+  },
+  "legendDuplicate": {
+    "message": "такое слово в колоде уже есть"
+  },
+  "legendRejected": {
+    "message": "не добавлено: в выделении не слово"
+  },
+  "legendProblem": {
+    "message": "нет связи с сервером (значок серый) или нужно войти (оранжевый). Слова не теряются и отправятся сами, когда всё наладится."
+  },
+  "privacyNote": {
+    "message": "Расширение обращается только к указанному здесь серверу и отправляет ему только те слова, которые вы добавили."
+  },
+
+  "error_server_required": {
+    "message": "Укажите адрес сервера."
+  },
+  "error_invalid_url": {
+    "message": "Это не похоже на адрес сайта."
+  },
+  "error_permission_denied": {
+    "message": "Без доступа к этому серверу расширение не сможет отправлять слова. Нажмите «Войти» ещё раз и разрешите доступ."
+  },
+  "error_unreachable": {
+    "message": "Сервер не отвечает. Проверьте адрес и подключение к сети."
+  },
+  "error_foreign": {
+    "message": "По этому адресу отвечает не ElfaLingo. Проверьте адрес."
+  },
+  "error_invalid_credentials": {
+    "message": "Неверный email или пароль."
+  },
+  "error_account_disabled": {
+    "message": "Учётная запись отключена."
+  },
+  "error_too_many_attempts": {
+    "message": "Слишком много неудачных попыток. Вход заблокирован на 5 минут."
+  },
+  "error_validation_error": {
+    "message": "Проверьте email."
+  },
+  "error_server_error": {
+    "message": "Сервер ответил ошибкой. Попробуйте позже."
+  },
+  "error_signed_out": {
+    "message": "Сессия закончилась. Войдите снова."
+  },
+  "error_unknown": {
+    "message": "Что-то пошло не так. Попробуйте ещё раз."
+  }
+}

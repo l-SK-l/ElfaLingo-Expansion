@@ -1,0 +1,201 @@
+{
+  "extName": {
+    "message": "ElfaLingo: Add to Deck",
+    "description": "Extension name in the Chrome Web Store and in Chrome. Max 75 characters."
+  },
+  "extDescription": {
+    "message": "Right-click a word selected on any web page to add it to your ElfaLingo deck. Works with your own ElfaLingo server.",
+    "description": "Extension description. Max 132 characters."
+  },
+  "menuAdd": {
+    "message": "Add “%s” to ElfaLingo",
+    "description": "Context menu item over selected text. Chrome replaces %s with the selection."
+  },
+
+  "titleIdle": {
+    "message": "Select a word on a page and right-click it to add it"
+  },
+  "titlePending": {
+    "message": "Waiting to be sent: $COUNT$",
+    "placeholders": { "count": { "content": "$1", "example": "3" } }
+  },
+  "problem_signed_out": {
+    "message": "Not signed in — click the icon to sign in"
+  },
+  "problem_account_disabled": {
+    "message": "The account is disabled — ask the administrator of your ElfaLingo server"
+  },
+  "problem_unreachable": {
+    "message": "No connection to the ElfaLingo server"
+  },
+  "problem_foreign": {
+    "message": "The server address does not lead to ElfaLingo — check it in the settings"
+  },
+  "problem_server_error": {
+    "message": "The server returned an error — words will be sent again later"
+  },
+  "resultAdded": {
+    "message": "Sent to the deck: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "“Hund”" } }
+  },
+  "resultDuplicate": {
+    "message": "Already in the deck: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "“Hund”" } }
+  },
+  "resultRejected": {
+    "message": "Not added: $WORDS$",
+    "placeholders": { "words": { "content": "$1", "example": "“Hund”" } }
+  },
+  "resultNothing": {
+    "message": "Nothing to add: the selection has no word"
+  },
+  "quoted": {
+    "message": "“$WORD$”",
+    "placeholders": { "word": { "content": "$1", "example": "Hund" } }
+  },
+  "andMore": {
+    "message": "and $COUNT$ more",
+    "placeholders": { "count": { "content": "$1", "example": "3" } }
+  },
+
+  "pageTitle": {
+    "message": "ElfaLingo: Add to Deck — settings"
+  },
+  "tagline": {
+    "message": "Add words to your deck from any website"
+  },
+  "versionLabel": {
+    "message": "Version $VERSION$",
+    "placeholders": { "version": { "content": "$1", "example": "1.0.0" } }
+  },
+  "statusOk": {
+    "message": "Connected — selected words go straight to your deck"
+  },
+  "statusChecking": {
+    "message": "Checking the connection…"
+  },
+  "lastTitle": {
+    "message": "Last time"
+  },
+  "signInTitle": {
+    "message": "Sign in"
+  },
+  "labelServer": {
+    "message": "Server address"
+  },
+  "hintServer": {
+    "message": "The address you open ElfaLingo at, for example https://elfalingo.example.com"
+  },
+  "labelEmail": {
+    "message": "Email"
+  },
+  "labelPassword": {
+    "message": "Password"
+  },
+  "labelRemember": {
+    "message": "Remember sign-in"
+  },
+  "hintRemember": {
+    "message": "The password is never stored. With this option the session token is kept until you sign out; without it, until the browser closes."
+  },
+  "warningInsecure": {
+    "message": "This address uses http: the password and your words travel unencrypted. Use https for a server that is not on this computer."
+  },
+  "buttonSignIn": {
+    "message": "Sign in"
+  },
+  "buttonSigningIn": {
+    "message": "Signing in…"
+  },
+  "accountTitle": {
+    "message": "Account"
+  },
+  "accountServer": {
+    "message": "Server"
+  },
+  "accountEmail": {
+    "message": "Email"
+  },
+  "accountSession": {
+    "message": "Session"
+  },
+  "sessionRemembered": {
+    "message": "Remembered until you sign out"
+  },
+  "sessionBrowser": {
+    "message": "Until the browser closes"
+  },
+  "buttonCheck": {
+    "message": "Check connection"
+  },
+  "buttonSignOut": {
+    "message": "Sign out"
+  },
+  "signOutNote": {
+    "message": "To change the server or the account, sign out and sign in again. Words not yet sent are discarded on sign-out."
+  },
+  "howToTitle": {
+    "message": "How to use"
+  },
+  "howToSelect": {
+    "message": "Select a word on any page, right-click it and choose “Add to ElfaLingo”."
+  },
+  "howToList": {
+    "message": "Several words separated by commas are added one by one. A word goes to the queue and ElfaLingo fills in the card, just like a word typed in the app."
+  },
+  "legendTitle": {
+    "message": "The icon"
+  },
+  "legendAdded": {
+    "message": "the word was sent to your deck (“+3” — three words)"
+  },
+  "legendDuplicate": {
+    "message": "the deck already has this word"
+  },
+  "legendRejected": {
+    "message": "not added: the selection is not a word"
+  },
+  "legendProblem": {
+    "message": "no connection to the server (grey icon) or you need to sign in (amber). Words are kept and sent automatically once it is fixed."
+  },
+  "privacyNote": {
+    "message": "The extension talks only to the server set here and sends it nothing but the words you choose to add."
+  },
+
+  "error_server_required": {
+    "message": "Enter the server address."
+  },
+  "error_invalid_url": {
+    "message": "This does not look like a web address."
+  },
+  "error_permission_denied": {
+    "message": "Without access to this server the extension cannot send words. Sign in again and allow access."
+  },
+  "error_unreachable": {
+    "message": "The server does not answer. Check the address and your connection."
+  },
+  "error_foreign": {
+    "message": "Something answered at this address, but it is not ElfaLingo. Check the address."
+  },
+  "error_invalid_credentials": {
+    "message": "Wrong email or password."
+  },
+  "error_account_disabled": {
+    "message": "This account is disabled."
+  },
+  "error_too_many_attempts": {
+    "message": "Too many failed attempts. Sign-in is locked for 5 minutes."
+  },
+  "error_validation_error": {
+    "message": "Check the email address."
+  },
+  "error_server_error": {
+    "message": "The server returned an error. Try again later."
+  },
+  "error_signed_out": {
+    "message": "The session has ended. Sign in again."
+  },
+  "error_unknown": {
+    "message": "Something went wrong. Try again."
+  }
+}

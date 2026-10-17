@@ -1,0 +1,17 @@
+{
+  "name": "elfalingo-chrome-extension",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: add a word selected on any page to the ElfaLingo deck",
+  "scripts": {
+    "build": "./build-dist.sh",
+    "test": "node --test test/*.test.js",
+    "icons": "python3 scripts/make_icons.py",
+    "package": "node scripts/package.mjs",
+    "e2e": "node scripts/e2e.mjs",
+    "store-images": "node scripts/store-images.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

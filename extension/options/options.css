@@ -1,0 +1,331 @@
+/* Colours follow the ElfaLingo web app: its manifest's theme colour and
+   surface, and the dark tones its seed (#5B4130) gives in Material 3. */
+:root {
+  color-scheme: light dark;
+  --surface: #fff8f5;
+  --card: #ffffff;
+  --text: #221a15;
+  --muted: #6b5c53;
+  --outline: #d8c2b8;
+  --primary: #6e390e;
+  --on-primary: #ffffff;
+  --primary-soft: #f6e3d7;
+  --ok: #2e7d32;
+  --problem: #c62828;
+  --amber: #e37400;
+  --duplicate: #6d5446;
+  --warning-bg: #fff1d6;
+  --warning-text: #5c3b00;
+  --error-bg: #fde7e7;
+  --error-text: #8c1d18;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #19120d;
+    --card: #231a15;
+    --text: #f0dfd6;
+    --muted: #c3b1a7;
+    --outline: #53433b;
+    --primary: #ffb68c;
+    --on-primary: #512400;
+    --primary-soft: #3a2a20;
+    --ok: #81c784;
+    --problem: #ef9a9a;
+    --amber: #ffb74d;
+    --duplicate: #c9b2a5;
+    --warning-bg: #3d2e10;
+    --warning-text: #ffdea6;
+    --error-bg: #3d1a18;
+    --error-text: #ffb4ab;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--text);
+  font: 15px/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+  display: grid;
+  gap: 16px;
+  align-items: start;
+}
+
+.column {
+  display: grid;
+  gap: 16px;
+}
+
+/* The page opens in a tab: on a wide screen the help sits beside the form
+   instead of below the fold. */
+@media (min-width: 960px) {
+  main {
+    max-width: 1040px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 16px 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.brand p,
+.muted,
+.hint {
+  color: var(--muted);
+}
+
+.brand .version {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.card,
+.status {
+  background: var(--card);
+  border: 1px solid var(--outline);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.status {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.status p + p,
+.status p + div,
+.help p + p {
+  margin-top: 8px;
+}
+
+.status ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.overline {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.dot.ok {
+  background: var(--ok);
+}
+
+.dot.problem {
+  background: var(--problem);
+}
+
+.dot.amber {
+  background: var(--amber);
+}
+
+form {
+  display: grid;
+}
+
+label {
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--outline);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.hint {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+label.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+label.check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--primary);
+}
+
+.warning,
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.warning {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.error {
+  background: var(--error-bg);
+  color: var(--error-text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--on-primary);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--outline);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 16px;
+  margin: 0;
+}
+
+dt {
+  color: var(--muted);
+}
+
+dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.legend {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.legend li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.chip {
+  flex: none;
+  min-width: 26px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.chip.added {
+  background: #2e7d32;
+}
+
+.chip.duplicate {
+  background: #6d5446;
+}
+
+.chip.rejected,
+.chip.problem {
+  background: #c62828;
+}

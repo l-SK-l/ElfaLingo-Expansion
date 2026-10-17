@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ElfaLingo</title>
+    <link rel="icon" href="/icons/icon-32.png" />
+    <link rel="stylesheet" href="options.css" />
+    <script type="module" src="options.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="brand">
+        <img src="/icons/icon-128.png" alt="" width="64" height="64" />
+        <div>
+          <h1 data-i18n="extName"></h1>
+          <p data-i18n="tagline"></p>
+          <p id="version" class="version"></p>
+        </div>
+      </header>
+
+      <div class="column">
+        <section id="status" class="status" role="status" aria-live="polite" hidden>
+          <span id="status-dot" class="dot"></span>
+          <div>
+            <p id="status-text"></p>
+            <p id="status-pending" class="muted" hidden></p>
+            <div id="status-last" class="muted" hidden>
+              <p data-i18n="lastTitle" class="overline"></p>
+              <ul id="status-last-lines"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="signin" class="card" hidden>
+          <h2 data-i18n="signInTitle"></h2>
+          <form id="signin-form">
+            <label for="server" data-i18n="labelServer"></label>
+            <input
+              id="server"
+              type="text"
+              inputmode="url"
+              autocomplete="url"
+              spellcheck="false"
+              autocapitalize="off"
+              placeholder="https://elfalingo.example.com"
+              required
+            />
+            <p class="hint" data-i18n="hintServer"></p>
+            <p id="insecure" class="warning" data-i18n="warningInsecure" hidden></p>
+
+            <label for="email" data-i18n="labelEmail"></label>
+            <input id="email" type="email" autocomplete="username" spellcheck="false" required />
+
+            <label for="password" data-i18n="labelPassword"></label>
+            <input id="password" type="password" autocomplete="current-password" required />
+
+            <label class="check">
+              <input id="remember" type="checkbox" checked />
+              <span data-i18n="labelRemember"></span>
+            </label>
+            <p class="hint" data-i18n="hintRemember"></p>
+
+            <p id="signin-error" class="error" role="alert" hidden></p>
+            <div class="actions">
+              <button id="signin-button" type="submit" data-i18n="buttonSignIn"></button>
+            </div>
+          </form>
+        </section>
+
+        <section id="account" class="card" hidden>
+          <h2 data-i18n="accountTitle"></h2>
+          <dl>
+            <dt data-i18n="accountServer"></dt>
+            <dd id="account-server"></dd>
+            <dt data-i18n="accountEmail"></dt>
+            <dd id="account-email"></dd>
+            <dt data-i18n="accountSession"></dt>
+            <dd id="account-session"></dd>
+          </dl>
+          <div class="actions">
+            <button
+              id="check-button"
+              type="button"
+              class="secondary"
+              data-i18n="buttonCheck"
+            ></button>
+            <button
+              id="signout-button"
+              type="button"
+              class="secondary"
+              data-i18n="buttonSignOut"
+            ></button>
+          </div>
+          <p class="hint" data-i18n="signOutNote"></p>
+        </section>
+      </div>
+
+      <div class="column">
+        <section class="card help">
+          <h2 data-i18n="howToTitle"></h2>
+          <p data-i18n="howToSelect"></p>
+          <p data-i18n="howToList"></p>
+          <h3 data-i18n="legendTitle"></h3>
+          <ul class="legend">
+            <li><span class="chip added">✓</span><span data-i18n="legendAdded"></span></li>
+            <li><span class="chip duplicate">=</span><span data-i18n="legendDuplicate"></span></li>
+            <li><span class="chip rejected">×</span><span data-i18n="legendRejected"></span></li>
+            <li><span class="chip problem">!</span><span data-i18n="legendProblem"></span></li>
+          </ul>
+          <p class="hint" data-i18n="privacyNote"></p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
